@@ -2,6 +2,12 @@ from selenium import webdriver
 from time import sleep
 from selenium.webdriver.common.keys import Keys
 
+"""
+    This code was written under Windows, it is designed to automatically log in to TikTok social media.
+
+    The code is outdated, but some points can be emphasized for yourself
+"""
+
 def face_book(login=None, password=None):
 
     PATH = r'chromedriver.exe'
@@ -76,11 +82,11 @@ def vk(login=None, password=None):
         driver.close()
         driver.quit()
 
-    print('Регистрация прошла успешно!')
+    print('Registration completed successfully!')
 
 def main():
 
-    chak = input('Как будем проходить регитср?\n1.VK\n2.facebook\nНажмите просто цифру!\n----->')
+    chak = input('How will we go through the registration?\n1.VK\n2.facebook\nJust press a number!\n----->')
 
     try:
         if chak == '2':
